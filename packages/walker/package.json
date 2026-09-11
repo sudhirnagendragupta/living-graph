@@ -1,0 +1,34 @@
+{
+  "name": "@living-graph/walker",
+  "version": "0.1.0",
+  "description": "Playwright autonomous browser walker and self-healing test executor",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "walk:v1": "tsc && node dist/index.js --version=v1",
+    "walk:v2": "tsc && node dist/index.js --version=v2",
+    "walk:heal": "tsc && node dist/index.js --heal"
+  },
+  "keywords": [
+    "living-graph",
+    "playwright",
+    "browser",
+    "agent",
+    "walker",
+    "self-healing"
+  ],
+  "author": "Sudhir Gupta",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.125.0",
+    "@living-graph/extractor": "*",
+    "@living-graph/verifier": "*",
+    "playwright": "^1.44.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@living-graph/renderer",
+  "version": "0.1.0",
+  "description": "Studio voiceover synthesis and FFmpeg video compositor for self-healing documentation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "render:v1": "tsc && node dist/index.js --v1",
+    "render:heal": "tsc && node dist/index.js --heal"
+  },
+  "keywords": [
+    "living-graph",
+    "elevenlabs",
+    "ffmpeg",
+    "video",
+    "tutorial"
+  ],
+  "author": "Sudhir Gupta",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@living-graph/extractor": "*",
+    "@living-graph/walker": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5"
+  }
+}

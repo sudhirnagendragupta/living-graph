@@ -1,0 +1,29 @@
+{
+  "name": "@living-graph/extractor",
+  "version": "0.1.0",
+  "description": "AST state machine extractor and LLM workflow enricher for React/TypeScript codebases",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "extract": "tsc && node dist/index.js",
+    "diff": "tsc && node dist/index.js --diff"
+  },
+  "keywords": [
+    "living-graph",
+    "ast",
+    "graph",
+    "extractor",
+    "gemini"
+  ],
+  "author": "Sudhir Gupta",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5"
+  }
+}

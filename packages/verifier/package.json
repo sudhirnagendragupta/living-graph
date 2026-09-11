@@ -1,0 +1,24 @@
+{
+  "name": "@living-graph/verifier",
+  "version": "0.1.0",
+  "description": "NVIDIA NIM vision verifier client for UI state verification and self-healing",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "living-graph",
+    "nim",
+    "nvidia",
+    "vlm",
+    "verifier"
+  ],
+  "author": "Sudhir Gupta",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5"
+  }
+}

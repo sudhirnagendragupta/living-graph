@@ -1,0 +1,31 @@
+{
+  "name": "living-graph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Living Graph: Autonomous engine generating self-healing learning assets from code: studio tutorial videos and deterministic Playwright tests.",
+  "workspaces": [
+    "apps/deskly",
+    "packages/cli",
+    "packages/extractor",
+    "packages/walker",
+    "packages/verifier",
+    "packages/renderer"
+  ],
+  "scripts": {
+    "dev:deskly": "npm run dev --workspace=apps/deskly",
+    "build:deskly": "npm run build --workspace=apps/deskly",
+    "extract:graph": "npm run extract --workspace=@living-graph/extractor",
+    "diff:graph": "npm run diff --workspace=@living-graph/extractor",
+    "cli": "node packages/cli/bin/living-graph.js",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "keywords": [
+    "living-graph",
+    "learning-assets",
+    "playwright",
+    "ast",
+    "workflow-extraction"
+  ],
+  "author": "Sudhir Gupta",
+  "license": "Apache-2.0"
+}
